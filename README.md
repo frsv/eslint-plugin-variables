@@ -10,7 +10,6 @@ Installation
 
 ```npm
 npm install -D eslint-plugin-variables
-
 ```
 
 Usage
