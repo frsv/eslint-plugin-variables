@@ -27,4 +27,4 @@ Currently following rules is supported:
 
 License
 -------
-[MIT](LICENSE)
+[MIT](LICENSE.md)
