@@ -1,6 +1,8 @@
 eslint-plugin-variables
 =================
 
+[![Build Status](https://travis-ci.org/frsv/eslint-plugin-variables.svg?branch=master)](https://travis-ci.org/frsv/eslint-plugin-variables)
+
 ESLint micro plugin with rules for more strictly variables usage.
 
 Usage
