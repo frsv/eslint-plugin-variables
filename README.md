@@ -5,6 +5,14 @@ eslint-plugin-variables
 
 ESLint micro plugin with rules for more strictly variables usage.
 
+Installation
+------------
+
+```npm
+npm install -D eslint-plugin-variables
+
+```
+
 Usage
 -----
 
