@@ -25,7 +25,7 @@ Rules list
 
 Currently following rules is supported:
 
-  - `es5/only-ascii-variables`: Forbid [unicode variable names](https://mathiasbynens.be/notes/javascript-identifiers).
+  - `variables/only-ascii-variables`: Forbid [unicode variable names](https://mathiasbynens.be/notes/javascript-identifiers).
 
 License
 -------
