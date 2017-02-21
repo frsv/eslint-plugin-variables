@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-variables",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint micro plugin with rules for more strictly variables usage.",
   "keywords": [
     "eslint",
