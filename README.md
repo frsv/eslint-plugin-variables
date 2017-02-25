@@ -36,7 +36,7 @@ Currently following rules is supported:
 
 Developing rules:
 
-  - `variables/snakecase`: Force to use snake_case in your code. Best suited if you your project have python code. Option for permission to use camelCase in class names will be provided.
+  - `variables/snakecase`: Force to use snake_case in your code. Best suited if you your project has python code. Option for permission to use camelCase in class names will be provided.
 
 License
 -------
