@@ -19,7 +19,7 @@ module.exports = {
             errors: [{message: "Identifier 'FOO_BAR' is not in snake case."}],
         },
         {
-            code: 'class foo_bar_baz',
+            code: 'class foo_bar_baz {}',
             options: [{ camelcasedClasses: true }],
             errors: [{message: "Identifier 'foo_bar_baz' is not in snake case."}],
         }
