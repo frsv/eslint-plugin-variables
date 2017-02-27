@@ -36,7 +36,22 @@ Currently following rules is supported:
 
 Developing rules:
 
-  - `variables/snakecase`: Force to use snake_case in your code. Best suited if you your project has python code. Option for permission to use camelCase in class names will be provided.
+  - `variables/snakecase`: Force to use snake_case in your code. 
+  Best suited if you your project has python code. 
+  Option for permission to use camelCase in class names will be provided.
+
+Troubleshooting
+---------------
+
+You can get error "Parsing error: The keyword is reserved" 
+if you use modern JavaScript features in your project, such as let and const.
+To solve this, add to your `.eslintrc`:
+
+```json
+"parserOptions": {
+    "ecmaVersion": 2015
+}
+```
 
 License
 -------

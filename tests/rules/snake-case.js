@@ -3,8 +3,8 @@
 module.exports = {
     valid: [
         'var foo = 1',
-        'var foo_bar = 1',
-        'var foo_bar_baz = 1',
+        'const foo_bar = 1',
+        'let foo_bar_baz = 1',
         { code: 'var FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
         { code: 'class fooBarBaz {}', options: [{ camelcasedClasses: true }] },
     ],
@@ -21,7 +21,17 @@ module.exports = {
         {
             code: 'class foo_bar_baz {}',
             options: [{ camelcasedClasses: true }],
-            errors: [{message: "Identifier 'foo_bar_baz' is not in snake case."}],
-        }
+            errors: [{message: "Class 'foo_bar_baz' should be in camel case: 'camelcasedClass' is turned on."}],
+        },
+        {
+            code: 'class fooBarBaz {}',
+            options: [{ camelcasedClasses: false }],
+            errors: [{message: "Identifier 'fooBarBaz' is not in snake case."}],
+        },
+        {
+            code: 'class FOO_BAR {}',
+            options: [{ allowCapitalized: true, camelcasedClasses: true }],
+            errors: [{message: "Class 'FOO_BAR' should be in camel case: 'camelcasedClass' is turned on."}],
+        },
     ]
 };
