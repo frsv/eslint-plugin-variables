@@ -33,12 +33,9 @@ Rules list
 Currently following rules is supported:
 
   - `variables/only-ascii-variables`: Forbid [unicode variable names](https://mathiasbynens.be/notes/javascript-identifiers).
-
-Developing rules:
-
-  - `variables/snakecase`: Force to use snake_case in your code. 
-  Best suited if you your project has python code. 
-  Option for permission to use camelCase in class names will be provided.
+  - `variables/snakecase`: Force to use snake_case in your code. Options: `allowCapitalized`, `camelcasedClasses`.
+  Use `allowCapitalized` if your code contains capitalized constants, e.g. `MY_IMPORTANT_CONSTANT = {...}`
+  Use `camelcasedClasses` to allow class names in camel case (hi, PEP8). Currently works only with ES5 `class` statement.
 
 Troubleshooting
 ---------------
@@ -52,6 +49,12 @@ To solve this, add to your `.eslintrc`:
     "ecmaVersion": 2015
 }
 ```
+
+Contributing
+------------
+
+This package contains only rules related to the variables usage and naming in JavaScript.
+Feel free to open issues and pull requests and suggest rules
 
 License
 -------
