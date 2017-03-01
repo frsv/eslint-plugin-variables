@@ -5,13 +5,25 @@ module.exports = {
         'var foo = 1',
         'const foo_bar = 1',
         'let foo_bar_baz = 1',
+        'class foo {}',
+        'class foo_bar {}',
+        'class foo_bar { test() {} }',
+        'class foo_bar { test_method() {} }',
         { code: 'var FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
+        { code: 'const FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
+        { code: 'let FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
         { code: 'class fooBarBaz {}', options: [{ camelcasedClasses: true }] },
+        { code: 'class fooBarBaz { test_method() { return } }', options: [{ camelcasedClasses: true }] },
+        { code: 'class foo_bar_baz {}', options: [{ camelcasedClasses: false }] },
     ],
     invalid: [
         {
             code: 'var fooBar = 1',
             errors: [{message: "Identifier 'fooBar' is not in snake case."}],
+        },
+        {
+            code: 'var foo_Bar = 1',
+            errors: [{message: "Identifier 'foo_Bar' is not in snake case."}],
         },
         {
             code: 'var FOO_BAR = 2',
