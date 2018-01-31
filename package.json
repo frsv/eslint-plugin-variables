@@ -4,7 +4,10 @@
   "description": "ESLint micro plugin with rules for more strictly variables usage.",
   "keywords": [
     "eslint",
-    "eslintplugin"
+    "eslintplugin",
+    "eslint-plugin",
+    "variable",
+    "name-convention"
   ],
   "author": "frsv <fursovroman95@gmail.com>",
   "license": "MIT",
