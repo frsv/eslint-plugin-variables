@@ -30,12 +30,12 @@ Add into your `.eslintrc`:
 Rules list
 ----------
 
-Currently following rules is supported:
+Currently following rules are supported:
 
   - `variables/only-ascii-variables`: Forbid [unicode variable names](https://mathiasbynens.be/notes/javascript-identifiers).
-  - `variables/snakecase`: Force to use snake_case in your code. Options: `allowCapitalized`, `camelcasedClasses`.
-  Use `allowCapitalized` if your code contains capitalized constants, e.g. `MY_IMPORTANT_CONSTANT = {...}`
-  Use `camelcasedClasses` to allow class names in camel case (hi, PEP8). Currently works only with ES5 `class` statement.
+  - `variables/snakecase`: **[WIP]** Force to use snake_case in your code. Options: `allowCapitalized`, `camelcasedClasses`.
+    * Use `allowCapitalized` if your code contains capitalized constants, e.g. `MY_IMPORTANT_CONSTANT = {...}`  
+    * Use `camelcasedClasses` to allow class names in camel case (hi, PEP8). Currently works only with ES5 `class` statement.
 
 Troubleshooting
 ---------------
@@ -55,6 +55,15 @@ Contributing
 
 This package contains only rules related to the variables usage and naming in JavaScript.
 Feel free to open issues and pull requests and suggest rules
+
+
+Tests running
+-------------
+
+Just run
+```bash
+npm test
+```
 
 License
 -------

@@ -13,7 +13,7 @@ module.exports = {
         { code: 'const FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
         { code: 'let FOO_BAR_BAZ = 1', options: [{ allowCapitalized: true }] },
         { code: 'class fooBarBaz {}', options: [{ camelcasedClasses: true }] },
-        { code: 'class fooBarBaz { test_method() { return } }', options: [{ camelcasedClasses: true }] },
+        { code: 'class FooBarBaz { test_method() { return } }', options: [{ camelcasedClasses: true }] },
         { code: 'class foo_bar_baz {}', options: [{ camelcasedClasses: false }] },
     ],
     invalid: [
